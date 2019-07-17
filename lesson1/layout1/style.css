@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    height: 200px;
+    background-color: darkcyan;
+    justify-content: space-between;
+    padding: 30px 30px 30px;
+}
+.logo {
+    width: 350px;
+    height: 150px;
+    background-color: #fff;
+}
+
+.header-info {
+    font-size: 36px;
+}
+.header-info-ul {
+    font-size: 
+}
