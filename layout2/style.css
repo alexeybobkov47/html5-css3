@@ -1,0 +1,56 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  height: 100px;
+  margin: auto 0 auto 0;
+}
+
+.carousel-header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  width: 40%;
+  top: 35%;
+  left: 30%;
+  color: white;
+}
+
+.row {
+  position: absolute;
+  top: 2%;
+}
+
+.nav-tabs {
+  border-color: transparent;
+}
+
+.nav-tabs .active {
+  background-color: transparent !important;
+  color: #c7b299 !important;
+  border-color: transparent !important;
+}
+
+.nav-tabs .nav-link {
+  border-color: transparent !important;
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
