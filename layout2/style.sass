@@ -1,4 +1,5 @@
 @import vars
+@import keyflames
 
 body
     max-width: $max-width-site
@@ -6,11 +7,23 @@ body
 
 
 
-.carousel-control-prev, .carousel-control-next
+header .carousel-control-prev, .carousel-control-next
     height: 100px
     margin: auto 0 auto 0
+header .carousel-indicators
+    li
+        width: 12px
+        height: 12px
+        border: 2px
+        border-radius: 10px
+        margin: 10px
+        align-self: center
+    .active
+        background-color: transparent !important
+        border: 2px solid #998675
 
-.carousel-header
+
+header .carousel-header
     position: absolute
     display: flex
     flex-flow: column
@@ -19,6 +32,25 @@ body
     top: 35%
     left: 30%
     color: white
+    button
+        width: 30%
+        margin: 30px 5px 5px 5px
+        padding: 10px
+        align-self: center
+        background-color: #998675
+        color: white
+        border: 2px solid #998675
+        border-radius: 3px
+        font-size: 12px
+        font-weight: 800
+        box-shadow: 0 2px 0 #736357
+    button:active
+	    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    button:focus 
+        outline: 0
+
+
 header
     display: flex
     justify-content: center   
@@ -27,33 +59,22 @@ header
         top: 3%
         display: flex
         justify-content: center
-    
+        margin: 10px 20px 10px 20px
    
     color: white
     .logo
         display: flex
-        
+    .header-icon
+        margin: 5px
+        align-self: center
+    .fas
+        margin: 10px
+        color: white
+    .fas:hover
+         color: #c7b299 !important  
+         margin-top: 10% 
 
-.navbar
-.audio-test
-    position: absolute
-    top: 15%
-    left: 15%
-.video-test    
-    position: absolute
-    top: 70%
-    left: 5%
-    height: 150px
-.video-test-2
-    position: absolute
-    display: flex
-    flex-flow: column
-    text-align: center
-    width: 40%
-    top: 35%
-    left: 30%
-    color: white
-    
+
 
 .nav-tabs
     border-color: transparent
@@ -63,13 +84,23 @@ header
         border-color: transparent !important
     .nav-link
         border-color: transparent !important
+.nav-link:hover
+     color: #c7b299 !important  
+     margin-top: 10% 
     
 .nav-item a
     color: #fff
-
+    transition: all 1s ease
     
 
-
+.capability
+    padding: 20px
+    justify-content: center
+    .item
+        margin: 20px
+        flex-flow: column
+        align-content: center
+    
 
       
  
