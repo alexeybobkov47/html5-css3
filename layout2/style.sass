@@ -76,32 +76,134 @@ header
 
 
 
-.nav-tabs
-    border-color: transparent
+header 
+    .nav-tabs
+        border-color: transparent
     .active
         background-color: transparent !important
         color: #c7b299 !important
         border-color: transparent !important
     .nav-link
         border-color: transparent !important
-.nav-link:hover
-     color: #c7b299 !important  
-     margin-top: 10% 
+    .nav-link:hover
+        color: #c7b299 !important  
+        margin-top: 10% 
     
-.nav-item a
-    color: #fff
-    transition: all 1s ease
+    .nav-item a
+        color: #fff
+        transition: all 1s ease
     
 
 .capability
     padding: 20px
     justify-content: center
+    text-align: center
     .item
         margin: 20px
         flex-flow: column
-        align-content: center
-    
+    h1
+        color: #555555
 
+.realization
+    display: flex
+    flex-flow: column
+    align-items: center
+    padding: 20px 20px 0 20px
+    background-color: #fbfaf8
+    header
+        display: flex
+        flex-flow: column
+        color: #555555
+        margin: 25px
+        text-align: center
+        max-width: 50%
+    img  
+        z-index: 3
+        max-width: 50%
+
+    .img-center
+
+        display: flex
+        align-items: flex-end
+        justify-content: center
+        
+        
+    .img-left
+        transform: translate(65%)
+        z-index: 1
       
+        
+    .img-right
+        transform: translate(-65%)
+        z-index: 2
+    
+        
+       
+.Multipurpose
+    background: linear-gradient(45deg, #211b19, #4e3427)
+    padding: 25px 15% 25px 15%
+    color: white
+    display: flex
+    justify-content: space-between
+    header
+        flex-flow: column
+    span 
+        color: #c7b299
+    h6
+        color: #615855
+    button
+        width: 150px
+        padding: 10px
+        align-self: center
+        background-color: #998675
+        color: white
+        border: 2px solid #998675
+        border-radius: 3px
+        font-size: 12px
+        font-weight: 600
+        box-shadow: 0 2px 0 #736357
+    button:active
+	    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    button:focus 
+        outline: 0
+
+.Projects
+    padding: 25px
+    
+    .header
+        text-align: center
+        margin: 25px
+        color: #555555
+    img
+        width: 300px
+    figcaption
+        background-color: #fbfaf8
+    .nav-pills
+        margin: 25px
+
+    .nav-item
+        margin: 15px
+        padding: 3px 15px 3px 15px
+        transition: all 1s ease
+        a
+            color: #998675
+            text-decoration: none
+            
+    .nav-item:hover
+        a
+            color: white
+        background-color: #998675
+        border-radius: 3px
+        
+ 
+    .active 
+        a
+            color: #fff  !important
+        
+        color: #fff  !important
+        background-color: #998675 !important
+        
+
  
     

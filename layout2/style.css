@@ -164,26 +164,26 @@ header .fas:hover {
   margin-top: 10%;
 }
 
-.nav-tabs {
+header .nav-tabs {
   border-color: transparent;
 }
 
-.nav-tabs .active {
+header .active {
   background-color: transparent !important;
   color: #c7b299 !important;
   border-color: transparent !important;
 }
 
-.nav-tabs .nav-link {
+header .nav-link {
   border-color: transparent !important;
 }
 
-.nav-link:hover {
+header .nav-link:hover {
   color: #c7b299 !important;
   margin-top: 10%;
 }
 
-.nav-item a {
+header .nav-item a {
   color: #fff;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -194,6 +194,7 @@ header .fas:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .capability .item {
@@ -202,7 +203,171 @@ header .fas:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+}
+
+.capability h1 {
+  color: #555555;
+}
+
+.realization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 0 20px;
+  background-color: #fbfaf8;
+}
+
+.realization header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: #555555;
+  margin: 25px;
+  text-align: center;
+  max-width: 50%;
+}
+
+.realization img {
+  z-index: 3;
+  max-width: 50%;
+}
+
+.realization .img-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.realization .img-left {
+  -webkit-transform: translate(65%);
+          transform: translate(65%);
+  z-index: 1;
+}
+
+.realization .img-right {
+  -webkit-transform: translate(-65%);
+          transform: translate(-65%);
+  z-index: 2;
+}
+
+.Multipurpose {
+  background: linear-gradient(45deg, #211b19, #4e3427);
+  padding: 25px 15% 25px 15%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Multipurpose header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Multipurpose span {
+  color: #c7b299;
+}
+
+.Multipurpose h6 {
+  color: #615855;
+}
+
+.Multipurpose button {
+  width: 150px;
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #998675;
+  color: white;
+  border: 2px solid #998675;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-box-shadow: 0 2px 0 #736357;
+          box-shadow: 0 2px 0 #736357;
+}
+
+.Multipurpose button:active {
+  -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.Multipurpose button:focus {
+  outline: 0;
+}
+
+.Projects {
+  padding: 25px;
+}
+
+.Projects .header {
+  text-align: center;
+  margin: 25px;
+  color: #555555;
+}
+
+.Projects img {
+  width: 300px;
+}
+
+.Projects figcaption {
+  background-color: #fbfaf8;
+}
+
+.Projects .nav-pills {
+  margin: 25px;
+}
+
+.Projects .nav-item {
+  margin: 15px;
+  padding: 3px 15px 3px 15px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.Projects .nav-item a {
+  color: #998675;
+  text-decoration: none;
+}
+
+.Projects .nav-item:hover {
+  background-color: #998675;
+  border-radius: 3px;
+}
+
+.Projects .nav-item:hover a {
+  color: white;
+}
+
+.Projects .active {
+  color: #fff  !important;
+  background-color: #998675 !important;
+}
+
+.Projects .active a {
+  color: #fff  !important;
 }
 /*# sourceMappingURL=style.css.map */
