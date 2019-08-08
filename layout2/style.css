@@ -590,6 +590,11 @@ header .nav-item a {
   color: #555555;
 }
 
+.recent .recent-head {
+  margin: 3% auto;
+  width: 75%;
+}
+
 .recent .carousel-indicators {
   top: 5%;
 }
@@ -695,5 +700,47 @@ header .nav-item a {
   border: 1px solid #252525;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+
+.recent-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #555555;
+  opacity: .7;
+}
+
+.recent-arrow .fas {
+  font-size: 1.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.recent-arrow .fas:hover {
+  opacity: 1;
+  color: #c7b299;
+}
+
+.sponsor-logos {
+  background-image: url(media/img/footer-photo.png);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7% 10% 7% 10%;
+}
+
+.sponsor-logos .col-auto {
+  margin-right: 2%;
+}
+
+.footer-posts {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #555555;
+  padding: 5% 10% 5% 10%;
 }
 /*# sourceMappingURL=style.css.map */
