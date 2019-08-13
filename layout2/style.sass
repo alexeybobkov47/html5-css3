@@ -22,6 +22,8 @@ body
 	    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
     button:focus 
         outline: 0
+    button:hover
+        opacity: .9
 	    
 
 
@@ -183,18 +185,52 @@ header
     @extend .for-button
 
 .Projects
-    padding: 25px
+    padding: 3% 15% 3% 15%
+
     .header
         text-align: center
         margin: 25px
         color: #555555
-    img
-        width: 300px
+    
     figure
-        margin: 15px
-        background-color: black
+        max-width: 30%
+        height: 278px
+        overflow: hidden
+        background-color: #372f2d
+        padding: 0
+        margin-right: 1%
+        
+        
+
+    img
+        width: 100%
+        height: 200px
+        object-fit: cover
+            
+            
+            
+    .i 
+        height: 200px
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        display: flex
+        margin: 0 35%
+        visibility: hidden
+    .fas
+            
+        margin: auto
+        font-size: 1.5rem
+        color: white
+    .fas:hover
+        color: #c7b299
+            
+        
     
     figcaption
+        
         padding: 15px
         background-color: #fbfaf8
         color: #c7b299
@@ -209,13 +245,17 @@ header
             border-bottom: 15px solid #fbfaf8
     figure:hover
         figcaption
-            background-color: #211b19
+            background-color: #372f2d
             color: white 
             &::before  
-                border-bottom-color:  #211b19
-        //opacity: .3
+                border-bottom-color:  #372f2d
+        img
+            opacity: 0.5
+            background-color: #372f2d
         .autor
             color: #c7b299
+        .i
+            visibility: visible
     .autor
         color: #555555
         font-size: 14px
@@ -242,8 +282,9 @@ header
     @extend .for-button
     
 .video-presentation
+    
     video
-        max-width: $max-width-site
+        max-width: 900px
     
 .mobile-devices
     padding-top: 5%
@@ -394,8 +435,68 @@ header
     
 .footer-posts
     justify-content: center
-    background-color: #555555
+    background-color: #191919
     padding: 5% 10% 5% 10%
+    font-size: 10px
     
-.dribbble-widget
-   
+    h4, h2
+        color: white
+        font-size: 1.8rem
+        
+    .post
+        
+        margin-bottom: 1.5rem
+        margin-top: 1.5rem
+    .post:hover
+        
+        p
+            color: #c7b299
+        h6
+            color: white
+    hr
+        background-color:  #363636
+    p
+        transition: color 1s ease
+        font-size: 1rem
+        color: #555555
+    h6
+        transition: color 1s ease
+        color: #363636
+        font-size: 0.8rem
+.footer-info
+    a
+        color: white
+        text-decoration: none
+        font-size: 0.8rem
+    .fas
+        font-size: 0.5rem
+        margin-left: 0.5rem
+    
+.widgets
+    
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-row-gap: 1rem
+    grid-column-gap: 1rem
+    .widget
+        transition: opacity 0.5s ease
+.widget:hover
+    opacity: 0.5
+
+.footer-end
+    justify-content: space-between
+    padding: 3% 5% 3% 10%
+    background-color: #111111
+    flex-wrap: nowrap
+    h6
+        color: #555555
+        margin-right: 1rem
+    span
+        color: #959595
+    a
+        color: #555555
+        text-decoration: none
+        transition: color 0.5s ease
+    a:hover
+        color: #c7b299
