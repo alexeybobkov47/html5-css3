@@ -223,7 +223,7 @@ header .carousel-header h1 {
 }
 
 header .carousel-header h6 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 header {
@@ -577,106 +577,17 @@ header .nav-item a {
 }
 
 .video {
-  background: linear-gradient(135deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  max-height: 705px;
-  overflow: hidden;
-  top: 80px;
+  padding: 3% 0 3% 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.video-on {
-  overflow: visible;
-}
-
-.video-play {
+.video .video-p {
+  height: 700px;
   display: block;
-  position: relative;
-  height: 100%;
-}
-
-.video-play-on {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-  min-height: 350px;
-}
-
-.video__button {
-  border-radius: 50%;
-  border: 2px solid transparent;
-  background-color: rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  outline: none;
-  position: absolute;
-  top: 25%;
-  left: 47%;
-  height: 100px;
-  width: 100px;
-  z-index: 1;
-}
-
-.video__button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.video__button:active {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.video__button-svg {
-  fill: #fff;
-}
-
-.video__button-svg:hover {
-  fill: black;
-}
-
-.video__button-svg:active {
-  fill: orange;
-}
-
-.video-play__btn-hide {
-  display: none;
-}
-
-.video__poster-content {
-  background: url(media/img/poster-video.png);
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.video__poster-content h3 {
-  font-family: raleway-medium, sans-serif;
-  font-weight: 500;
-  font-size: 1.875rem;
-  margin: 20% 0 1%;
-}
-
-.video__poster-content p {
-  font-family: montserrat-light, sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.75rem;
-  margin-bottom: 36px;
-  margin: 0 35.625%;
-}
-
-.video__poster-content time {
-  font-size: 14px;
-  font-weight: 600;
-  color: #c7b299;
-  line-height: 24px;
-}
-
-.video__poster-content-hide {
-  display: none;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 .mobile-devices {
