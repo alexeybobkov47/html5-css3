@@ -152,7 +152,7 @@ body {
   max-width: 1920px;
 }
 
-.for-button button, header .carousel-header button, .Multipurpose button, .Projects button {
+.for-button button, header .carousel-header button, .Multipurpose button, .Projects button, .projects-grid button {
   width: 150px;
   padding: 10px;
   -ms-flex-item-align: center;
@@ -168,16 +168,16 @@ body {
           box-shadow: 0 2px 0 #736357;
 }
 
-.for-button button:active, header .carousel-header button:active, .Multipurpose button:active, .Projects button:active {
+.for-button button:active, header .carousel-header button:active, .Multipurpose button:active, .Projects button:active, .projects-grid button:active {
   -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.for-button button:focus, header .carousel-header button:focus, .Multipurpose button:focus, .Projects button:focus {
+.for-button button:focus, header .carousel-header button:focus, .Multipurpose button:focus, .Projects button:focus, .projects-grid button:focus {
   outline: 0;
 }
 
-.for-button button:hover, header .carousel-header button:hover, .Multipurpose button:hover, .Projects button:hover {
+.for-button button:hover, header .carousel-header button:hover, .Multipurpose button:hover, .Projects button:hover, .projects-grid button:hover {
   opacity: .9;
 }
 
@@ -453,7 +453,6 @@ header .nav-item a {
   max-width: 30%;
   height: 278px;
   overflow: hidden;
-  background-color: #372f2d;
   padding: 0;
   margin-right: 1%;
 }
@@ -485,8 +484,8 @@ header .nav-item a {
   margin: auto;
   font-size: 1.5rem;
   color: white;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 .Projects .fas:hover {
@@ -512,6 +511,10 @@ header .nav-item a {
   border-bottom: 15px solid #fbfaf8;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.Projects figure:hover {
+  background-color: #372f2d;
 }
 
 .Projects figure:hover figcaption {
@@ -891,6 +894,11 @@ footer h4 {
       grid-template-rows: 1fr 1fr;
   grid-row-gap: 1rem;
   grid-column-gap: 1rem;
+  justify-items: center;
+}
+
+.widgets img {
+  width: 100%;
 }
 
 .widgets .widget {
@@ -930,5 +938,175 @@ footer h4 {
 
 .footer-end a:hover {
   color: #c7b299;
+}
+
+.projects-grid {
+  padding: 3% 15% 3% 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 10% 10% 1fr 1fr 10%;
+      grid-template-rows: 10% 10% 1fr 1fr 10%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.projects-grid .projects-grid-header {
+  color: #555555;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.projects-grid .projects-grid-header h2 {
+  font-weight: 700;
+}
+
+.projects-grid .projects-grid-sort {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.projects-grid .projects-grid-button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.projects-grid figure {
+  width: 100%;
+  height: 278px;
+  overflow: hidden;
+  padding: 0;
+  margin-right: 1%;
+}
+
+.projects-grid img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.projects-grid .i {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 35%;
+  visibility: hidden;
+}
+
+.projects-grid .fas {
+  margin: auto;
+  font-size: 1.5rem;
+  color: white;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.projects-grid .fas:hover {
+  color: #c7b299;
+}
+
+.projects-grid figcaption {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 15px;
+  background-color: #fbfaf8;
+  color: #c7b299;
+  font-size: 18px;
+  position: relative;
+}
+
+.projects-grid figcaption::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: -30px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #fbfaf8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.projects-grid figure:hover {
+  background-color: #372f2d;
+}
+
+.projects-grid figure:hover figcaption {
+  background-color: #372f2d;
+  color: white;
+}
+
+.projects-grid figure:hover figcaption::before {
+  border-bottom-color: #372f2d;
+}
+
+.projects-grid figure:hover img {
+  opacity: 0.5;
+  background-color: #372f2d;
+}
+
+.projects-grid figure:hover .autor {
+  color: #c7b299;
+}
+
+.projects-grid figure:hover .i {
+  visibility: visible;
+}
+
+.projects-grid .autor {
+  color: #555555;
+  font-size: 14px;
+}
+
+.projects-grid .nav-pills {
+  margin: 25px;
+}
+
+.projects-grid .nav-item {
+  margin: 15px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border: 1px solid #998675;
+  border-radius: 7px;
+}
+
+.projects-grid .nav-item a {
+  color: #998675;
+  text-decoration: none;
+}
+
+.projects-grid .nav-item:hover {
+  background-color: #998675;
+  border-radius: 7px;
+}
+
+.projects-grid .nav-item:hover a {
+  color: #fff;
+}
+
+.projects-grid .active {
+  color: #fff  !important;
+  background-color: #998675 !important;
+}
+
+.projects-grid .active a {
+  color: #fff  !important;
 }
 /*# sourceMappingURL=style.css.map */
